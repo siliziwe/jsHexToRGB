@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex to RGB</title>
+</head>
+<body>
+    <form id="mainForm" name="mainForm" autocomplete="off">
+        <div class="form-group">
+           <label for="hex">Hex color code (#RRGGBB)</label>
+           <input type="text" id="hex" name="hex" placeholder="000000" minlength="3" maxlength="8" class="form-control form-control-lg" autofocus>
+        </div>
+        <div class="form-group">
+           <button type="button" title="Convert" class="btn btn-primary" onclick="calc()"> Convert</button>
+        </div>
+        <div class="form-group">
+           <label for="r">Red color (R)</label>
+           <input type="text" id="r" name="r" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="form-group">
+           <label for="g">Green color (G)</label>
+           <input type="text" id="g" name="g" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="form-group">
+           <label for="b">Blue color (B)</label>
+           <input type="text" id="b" name="b" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="form-group">
+           <label for="css">CSS color</label>
+           <input type="text" id="css" name="css" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="form-group">
+           <label for="color">Color preview</label>
+           <input type="text" id="color" name="color" class="form-control" style="height:70px; border:1px solid black" readonly>
+        </div>
+     </form>
+
+     <script src="/code.js"></script>
+</body>
+</html>
